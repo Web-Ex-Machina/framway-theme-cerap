@@ -43,7 +43,18 @@ window.addEventListener("load", function(e) {
             
         });
         console.log(slider);
-    })
+    });
+
+    let requestTab = new URL(location.href).searchParams.get('custom_tabs');
+    if (requestTab && $('.tabs--cerap').length) {
+        console.log(parseInt(requestTab) - 1);
+        setTimeout(()=>{
+            $('.tabs--cerap .nav__button').filter(function(){
+                return $(this).index() == parseInt(requestTab) - 1;
+            }).trigger('click');
+            $('.tabs--cerap').get(0).scrollIntoView({behavior: "smooth",block:"center",inline:"nearest"}); 
+        },10)
+    }
 });
 
 

@@ -238,6 +238,7 @@ h1, h2, h3, h4, h5, h6,
       figure{display: contents;}
     }
     &:hover,&.hover{
+      .megamenu__wrapper>li>ul,
       ul>li>ul{
           opacity: 1; visibility: visible; 
       }
@@ -558,7 +559,7 @@ h1, h2, h3, h4, h5, h6,
 
 .heroFW{
   &.splitcontent{
-    .heroFW__title{padding:.35em 0.45em .45em 1em; width: fit-content; background: color(white); color:var(--theme); font-weight: 400; margin-bottom: 0.65em;
+    .heroFW__title{padding:.35em 0.65em .45em 0.65em; width: fit-content; background: color(white); color:var(--theme); font-weight: 400; margin-bottom: 0.65em;
       font-size: 3rem; 
       font-size: clamp(16px,calc(1.2rem + 2vw),3rem);
       text-overflow: ellipsis;
