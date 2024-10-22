@@ -123,6 +123,20 @@ h1, h2, h3, h4, h5, h6,
   }
   transition: all 0.4s, border-radius 0s, height 0s;
 }
+.select2FW-wrapper{
+  @if input(radius) {
+    .select2-container--default.select2-container--open.select2-container--below .select2-selection--multiple, 
+    .select2-container--default.select2-container--open.select2-container--below .select2-selection--single{
+      border-bottom-left-radius: 0; 
+      border-bottom-right-radius: 0;
+    }
+    .select2-container--default.select2-container--open.select2-container--above .select2-selection--multiple, 
+    .select2-container--default.select2-container--open.select2-container--above .select2-selection--single{
+      border-top-left-radius: 0; 
+      border-top-right-radius: 0;
+    }
+  }
+}
 
 %radio,%checkbox{
   &+label{ padding: .5em .5em .5em 2.75em;
