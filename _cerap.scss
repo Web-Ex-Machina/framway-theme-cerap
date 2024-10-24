@@ -800,3 +800,15 @@ h1, h2, h3, h4, h5, h6,
     .tabs__tab{display: grid; gap: 1em; grid-template-columns: minmax(0,1fr);}
   }
 }
+
+
+
+// .marker-cluster-small {background-color: rgba(181, 226, 140, 0.6); }
+// .marker-cluster-medium {background-color: rgba(241, 211, 87, 0.6); }
+// .marker-cluster-large {background-color: rgba(253, 156, 115, 0.6); }
+// .leaflet-oldie .marker-cluster-small {background-color: rgb(181, 226, 140); }
+// .leaflet-oldie .marker-cluster-medium {background-color: rgb(241, 211, 87); }
+// .leaflet-oldie .marker-cluster-large {background-color: rgb(253, 156, 115); }
+
+.leaflet-tile-loaded{filter: brightness(0.75) invert(1); }
+.leaflet-container a {color: #000000;}
