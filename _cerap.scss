@@ -802,6 +802,24 @@ h1, h2, h3, h4, h5, h6,
 }
 
 
+// MEDIAS
+.newslist--videos{
+  .layout_latest{ min-width: 0;
+    &.first{
+      grid-column: span 2; grid-row: span 2;
+      @include media-max(xs){grid-column: span 1; grid-row: span 1;}
+      .block-card__figure{flex-grow: 1;}
+      .block-card__content{flex-grow: 0;}
+    }
+    &:hover{
+      .video__icon{opacity: 1;}
+    }
+    .video__icon{ position: absolute; inset: 0; z-index: 1; display: block; margin: auto; height: 30%; text-align: center;filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.35)); opacity: 0.5; transition: opacity 0.4s;
+      svg,i[class*=fa]{height: 100%;}
+    }
+  }
+
+}
 
 // .marker-cluster-small {background-color: rgba(181, 226, 140, 0.6); }
 // .marker-cluster-medium {background-color: rgba(241, 211, 87, 0.6); }
