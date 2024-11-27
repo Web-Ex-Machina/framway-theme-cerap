@@ -698,6 +698,7 @@ h1, h2, h3, h4, h5, h6,
   .portfolio__left{border-right: 1px solid color(greylight); 
     @include media-max(md){border-right: 0; }
     >.stick{gap: 2em;display: flex; flex-direction: column; position: sticky; top: 1em;}
+    >.wrapper{gap: 2em;display: flex; flex-direction: column;}
   }
   .portfolio__right{}
 }
@@ -712,9 +713,10 @@ h1, h2, h3, h4, h5, h6,
 .portfolio__filters{ flex-grow: 1;
   .nav,nav{ 
     display: grid; gap: 2em;
-    max-height: calc(100vh - 2em);
-    overflow: auto;
+    // max-height: calc(100vh - 6em);
+    // overflow: auto;
     padding-right: 2em;
+    padding-bottom: 2em;
     scrollbar-width: thin;
     scrollbar-color: rgba(body(font-color),0.1) rgba(body(font-color),0.01);
     &::-webkit-scrollbar {width: 5px; }
