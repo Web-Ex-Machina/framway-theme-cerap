@@ -191,7 +191,7 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 .headerFW__nav__inline{
-  li.megamenu{
+  li.megamenu{ white-space: normal;
     >ul{ // first ul, act as wrapper
       @extend .container !optional;
       display: grid; 
