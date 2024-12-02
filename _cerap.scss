@@ -465,7 +465,7 @@ h1, h2, h3, h4, h5, h6,
 }
 
 
-.countUpFW{ display: inline-flex; padding: 1em 2em 2em; flex-direction: column; justify-content: center;align-items: center;
+.countUpFW.keynumbers{ display: inline-flex; padding: 1em 2em 2em; flex-direction: column; justify-content: center;align-items: center;
   .item-grid &{width: 100%; height: 100%;}
   @each $key, $value in $colors{
     &.color--#{$key}{
@@ -476,12 +476,12 @@ h1, h2, h3, h4, h5, h6,
       .countUpFW__btn{--btn-font-color: #{$value};}
     } 
   }
+  // .countUpFW__icon{font-size: 3em;line-height: 1;}
+  .countUpFW__num{font-size: 6em; font-weight: 700; line-height: 1.2; display: block; margin-top: auto;}
+  .countUpFW__unit{font-size: 1.5em; text-transform: uppercase; font-weight: 700;}
+  .countUpFW__label{font-size: 1.5em; margin-top: 0; margin-bottom: auto;}
+  .countUpFW__btn{margin-top: 2.5em;}
 }
-// .countUpFW__icon{font-size: 3em;line-height: 1;}
-.countUpFW__num{font-size: 6em; font-weight: 700; line-height: 1.2; display: block; margin-top: auto;}
-.countUpFW__unit{font-size: 1.5em; text-transform: uppercase; font-weight: 700;}
-.countUpFW__label{font-size: 1.5em; margin-top: 0; margin-bottom: auto;}
-.countUpFW__btn{margin-top: 2.5em;}
 
 
 
