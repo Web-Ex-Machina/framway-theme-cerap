@@ -2,6 +2,13 @@
   --primary: #{$primary};
   --secondary: #{$secondary};
   --theme: var(--primary);
+
+  --mod_article-padding-y: #{$spacing*2};
+  --mod_article-margin-bottom: 0;
+  @include media-max(xs){
+    --mod_article-padding-y: #{$spacing};
+    --mod_article-margin-bottom: 0;
+  }
 }
 
 .corporate{--theme: var(--primary); }
@@ -11,13 +18,8 @@
 .ft-theme{color: var(--theme);}
 .bg-theme{background: var(--theme); color: color(white);}
 
-.mod_article{padding: $spacing*2 0;
-  // margin-bottom: $spacing*2; 
-  margin-bottom: 0; 
+.mod_article{
   .mod_article{padding: 0;}
-  @include media-max(xs){padding: $spacing 0;
-    // margin-bottom: $spacing;
-  }
   &.section{min-height: 100vh; display: flex; align-items: center; padding: clamp($spacing*2, 15vh, 400px) 0; position: relative; margin-bottom: 0;
     >.inside{flex-basis: 100%;}
   }
