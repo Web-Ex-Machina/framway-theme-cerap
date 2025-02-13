@@ -17,7 +17,14 @@ app.HeaderFW.prototype.navSwitcher = function(reduce = false){
     }
 };
 
+
 window.addEventListener("load", function(e) {
+    setTimeout(function(){
+    document.querySelectorAll('.fa-twitter').forEach((el)=>{
+        el.classList.toggle('fa-x-twitter','fa-twitter')
+        el.classList.add('fa-brands')
+    })
+    },200)
     $('.sliderFW.block-card__slider').each(function(){
         let slider = $(this);
         slider.find('.sliderFW__arrow').each(function(){

@@ -40,5 +40,7 @@ module.exports = {
 		// 'xs'  : '540px',
 		// 'xxs' : '100%',
 	},
+	'track-color': 'rgba(input(background),0.4)',
+	'filll-color': 'input(background)',
 };
 
