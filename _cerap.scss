@@ -23,6 +23,8 @@
   &.section{min-height: 100vh; display: flex; align-items: center; padding: clamp($spacing*2, 15vh, 400px) 0; position: relative; margin-bottom: 0;
     >.inside{flex-basis: 100%;}
   }
+
+  &:has(.mod_offersreader:first-child>.heroFW:first-child){padding-top: 0;}
 }
 .section__background{ @include img-container(cover);position: absolute; inset: 0; z-index: -1;}
 
