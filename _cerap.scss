@@ -697,6 +697,28 @@ h1, h2, h3, h4, h5, h6,
     }
   }
 }
+.mod_offersreader{  
+  container-name: offersreader;
+  container-type: inline-size; 
+  .widget-upload{display: grid; gap: 0.35em;
+    label{font-size: 1.2em;}
+  }
+}
+.offer__details{display: grid; gap:2em; grid-template-columns: 2fr 1fr; align-items: start; 
+  .offer__left {display: grid; gap:2em;}
+  .offer__right{display: grid; gap:2em;}
+  .offer__text {display: grid; gap:4em;}
+}
+
+@container offersreader (width < 700px){
+  .offer__details {grid-template-columns: 1fr;
+    .offer__right{
+      .offer__action{display: none;}
+    }
+  }
+}
+
+
 .pagination{
   %btn{@extend .btn-bd-theme !optional;}
 }
