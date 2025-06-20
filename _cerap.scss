@@ -619,6 +619,22 @@ h1, h2, h3, h4, h5, h6,
     .heroFW__content__wrapper{padding: 0 ($spacing*2) 0 $spacing; max-width: 100%; width: 100%; grid-column: 2; overflow: hidden;
       @include media-max(xs){padding: 0 $spacing;}
     }
+    &.revert{
+      .heroFW__figure{order:0;}
+      .heroFW__wrapper{
+        grid-template-columns: var(--w-picture) calc(100% - var(--w-picture)) ;
+        @include media-max(sm){
+          grid-template-columns: 1fr;
+        }
+      }
+      .heroFW__content{
+        grid-template-columns: auto calc((100vw - var(--container-mw)) / 2 + #{$spacing});
+        @include media-max(sm){
+          grid-template-columns: 1fr;
+        }
+      }
+      .heroFW__content__wrapper{grid-column: 1;}
+    }
   }
   &.splitcontent.reader{
     .heroFW__title{padding: 0; background: none; color: inherit; font-weight: bold;font-size: 3rem; margin-bottom: 0.65em;}
