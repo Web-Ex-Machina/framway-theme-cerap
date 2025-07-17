@@ -608,7 +608,7 @@ h1, h2, h3, h4, h5, h6,
       }
     }
     .heroFW__figure{position: relative; order:1;}
-    .heroFW__content{padding-left: 0; padding-right: 0; position: relative; 
+    .heroFW__content{padding-left: 0; padding-right: 0; position: relative; height: 100%;
       display: grid;
       grid-template-columns: calc((100vw - var(--container-mw)) / 2 + #{$spacing}) auto;
       color: color(white);
