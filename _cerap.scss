@@ -816,14 +816,14 @@ h1, h2, h3, h4, h5, h6,
     .content--left,.content--right{padding: $spacing*2 $spacing;}
     .content--left{background: Hsl(from var(--theme) calc(h + 140) calc(s + 0) calc(l + 30)); color: color(white); align-items: center;
       display: grid;
-      grid-template-columns: calc((100vw - var(--container-mw)) / 2 + #{$spacing}) auto;
+      grid-template-columns: calc((100vw - var(--container-mw)) / 2 + #{$spacing}) auto; justify-content: flex-end;
       @include media-max(sm){
         display: block; 
       }
     }
     .content--right{
       .separator{font-size: 3em;}
-      img{max-height: 150px;}
+      img{max-height: 150px; object-fit: contain;}
       .entity{text-align: right;}
       .customer{text-align: left;}
     }
