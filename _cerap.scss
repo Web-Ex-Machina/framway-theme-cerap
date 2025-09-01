@@ -581,6 +581,15 @@ h1, h2, h3, h4, h5, h6,
 }
 
 
+.ce_rsce_listIcons{
+  &:not(.d-grid){
+    .block-icon{flex-basis: calc(100% / var(--nb-cols,4)); min-width: var(--griditem-minwidth); margin-inline: 0;}
+  }
+  .block-icon{} 
+  .block-icon__icon{}
+  .block-icon__text{}
+}
+
 .heroFW{
   &.content__bg--theme{ color: color(white);
     .heroFW__content:after{@include pseudo(); top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background-color: var(--theme);}
