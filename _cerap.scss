@@ -176,6 +176,11 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
+input.geocities{
+  +.loader{ position: absolute; aspect-ratio: 1; height: 100%; margin-left: auto; background: none; z-index: 1;font-size: 1.35em;}
+  &:not(.loading)+.loader{opacity: 0;}
+}
+
 
 // HEADER
 .headerFW{
