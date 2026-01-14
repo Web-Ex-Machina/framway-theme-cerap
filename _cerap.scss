@@ -283,6 +283,9 @@ input.geocities{
           opacity: 1; visibility: visible; 
       }
     }
+    li.subwrapper{
+      >ul{@include grid($cols:1,$autocols:auto-fit);}
+    }
   }
 }
 .headerFW__nav__panel{
